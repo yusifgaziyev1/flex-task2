@@ -1,0 +1,224 @@
+:root {
+    --primary: #f35525;
+    --secodary: #fbd9cf;
+    --dark: #1e1e1e; 
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    border-bottom: 1px solid var(--dark);
+}
+
+header #header-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header-container .logo {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.logo h1 {
+    font-weight: 700;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+#header-container nav {
+    width: 70%;
+}
+
+header nav .nav-items {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-items .nav-item {
+    padding: 0 2rem;
+}
+
+.nav-item .nav-link {
+    color: var(--dark);
+}
+
+.nav-item .nav-link:hover {
+    color: var(--primary);
+    transition-duration: .5s;
+}
+
+.nav-item .active {
+    color: var(--primary);
+}
+
+/* ve yaxud ul li a:first-child olaraq da adlandırmaq olar amma active classını vermeyi daha meqsedeuyğun hesab etdim */
+
+.nav-items .nav-item:last-child .nav-link {
+    padding: 0.9rem 2rem 0.9rem 0;
+    background-color: var(--dark);
+    color: #fff;
+    border-radius: 30px;
+}
+
+.nav-items .nav-item:last-child .nav-link:hover {
+    color: var(--primary);
+    transition-duration: .5s;
+}
+
+.nav-items .nav-item:last-child .nav-link:hover i {
+    color: #fff;
+}
+
+.nav-items .nav-item:last-child .nav-link i {
+    padding: 0.9rem;
+    margin-right: 1rem;
+    display: inline-block;
+    background-color: var(--primary);
+    border-radius: 50%;
+}
+
+main {
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #container {
+    width: 85%;
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#container .col {
+    width: 30%;
+    height: 100%;
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+
+.col .card {
+    width: 100%;
+    height: 100%;
+}
+
+.card .card-img1 {
+    background-image: url(img/background1.jpg);
+}
+
+.card .card-img2 {
+    background-image: url(img/background2.jpg);
+}
+
+.card .card-img3 {
+    background-image: url(img/background3.jpg);
+}
+
+.card .card-img {
+    width: 100%;
+    height: 45%;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.card .card-content {
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5rem;
+}
+
+.card-content .card-content-top {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-content-top span:first-child {
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: var(--secodary);
+}
+
+.card-content-top span:last-child {
+    color: var(--primary);
+    font-size: 20px;
+}
+
+.card-content .card-content-info {
+    height: 50%;
+}
+
+.card-content-info h3 {
+    font-size: 17px;
+    margin: 16px 0;
+}
+
+.card-content-info .card-content-info-top {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.3rem;
+}
+
+.card-content-info .card-content-info-bottom {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.card-content .card-content-button {
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--dark);
+    padding-top: 0.5rem;
+}
+
+.card-content-button button {
+    display: inline-block;
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 30px;
+    background-color: var(--dark);
+    color: #fff;
+    cursor: pointer;
+}
+
+.card-content-button button:hover {
+    background-color: var(--primary);
+    transition-duration: .5s;
+}   
